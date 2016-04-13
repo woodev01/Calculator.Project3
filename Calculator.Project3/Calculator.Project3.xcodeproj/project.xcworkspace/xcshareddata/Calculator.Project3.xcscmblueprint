@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "61144AD3779E9020CC1A20FEF2E644CB5915F73B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "61144AD3779E9020CC1A20FEF2E644CB5915F73B" : 0,
+    "4A0B93F1842AC5EA0ED0EB30011CE0DADB6D1EEC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "12110E17-830F-4A72-890A-CFE5E0FF2D98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "61144AD3779E9020CC1A20FEF2E644CB5915F73B" : "Calculator.Project3\/",
+    "4A0B93F1842AC5EA0ED0EB30011CE0DADB6D1EEC" : "Calculator.Project2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Calculator.Project3",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Calculator.Project3\/Calculator.Project3.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/woodev01\/Calculator.Project2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A0B93F1842AC5EA0ED0EB30011CE0DADB6D1EEC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/woodev01\/Calculator.Project3",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61144AD3779E9020CC1A20FEF2E644CB5915F73B"
+    }
+  ]
+}
