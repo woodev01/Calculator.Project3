@@ -135,6 +135,33 @@ class CalculatorBrain {
         return(nil, ops)
     }
     
+    var program: AnyObject {
+        get {
+            return opStack.map{ $0.description }
+        }
+        set {
+            if let opSymbols = newValue as? Array<String> {
+                var newOpStack = [Op]()
+                for symbol in opSymbols {
+                    if let op = knownOps[symbol] {
+                        newOpStack.append(op)
+                    } else if let operand = NSNumberFormatter().numberFromString(symbol)?.doubleValue {
+                        newOpStack.append(.Operand(operand))
+                    } else {
+                        newOpStack.append(.Variable(symbol))
+                    }
+                }
+                opStack = newOpStack
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     func evaluate() -> Double? {
         let (result, remainder) = evaluate(opStack)
         print("\(opStack) = \(result) with \(remainder) left over")

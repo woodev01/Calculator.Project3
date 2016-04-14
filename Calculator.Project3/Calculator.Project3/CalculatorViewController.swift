@@ -15,6 +15,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var StackValue: UILabel!
     
     var brain = CalculatorBrain()
+    let x = GraphViewController()
     
     var checkForNumStart: Bool = false
     var checkForAlreadyAFloat: Bool = false
@@ -37,7 +38,6 @@ class CalculatorViewController: UIViewController {
             checkForNumStart = true
         }
     }
-    
     
     @IBAction func operatorKeys(sender: UIButton) {
         if checkForNumStart {
@@ -100,6 +100,24 @@ class CalculatorViewController: UIViewController {
                 checkForAlreadyAFloat = false
             } else {
                 DisplayValue.text = " "
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destination = segue.destinationViewController as UIViewController
+        if let nc = destination as? UINavigationController {
+            destination = nc.visibleViewController!
+        }
+        if let gvc = destination as? GraphViewController {
+            if let identifier = segue.identifier {
+                switch identifier {
+                case "plot graph":
+                    gvc.title = brain.description == "" ? "Graph" : brain.description.componentsSeparatedByString(", ").last
+                    gvc.program = brain.program
+                default:
+                    break
+                }
             }
         }
     }
